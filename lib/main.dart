@@ -21,7 +21,23 @@ class StorePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(children: []),
+        child: Column(children: [
+          SizedBox(
+            height: 70,
+            child: Row(
+              children: [
+                Text(
+                  'Woman',
+                ),
+                Text('Kids'),
+                Text('Shoes'),
+                Text('Bag')
+              ],
+            ),
+          ),
+          Expanded(child: Image.asset('assets/bag.jpg')),
+          Expanded(child: Image.asset('assets/shoes.jpg'))
+        ]),
       ),
     );
   }
